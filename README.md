@@ -8,7 +8,7 @@ This project is used to perform automated tests on the public Pokedex API. It wa
 ## Technologies
 - Node.js
 - Axios (for making HTTP requests)
-- Jest (for unit testing)
+- Jest (for API testing)
 
 ## Installation
 
