@@ -5,4 +5,18 @@ const api = axios.create({
     timeout: 5000
 });
 
-module.exports = api;
+/**
+ * Relative or full API URL
+ * @param {*} url 
+ */
+const get = async (url) => {
+    try {
+        const response = await api.get(url);
+        return response;
+    } catch (error) {
+        console.error(`Error getting information from ${error}:`, error);
+        throw error;
+    }
+}
+
+module.exports = { get };
